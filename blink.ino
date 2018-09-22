@@ -1,4 +1,3 @@
-char c;
 int globalDelay = 100;
 void setup() {
   pinMode(2, OUTPUT);
