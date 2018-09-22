@@ -1,4 +1,5 @@
-int globalDelay = 100;
+int globalDelay;
+int maxRandomValue = 200;
 void setup() {
   pinMode(2, OUTPUT);
   pinMode(8, OUTPUT);
@@ -10,7 +11,8 @@ void setup() {
   pinMode(11, OUTPUT);
 }
 
-void loop() {
+void loop() { 
+  globalDelay = random (maxRandomValue);
   oneByOne();
   delay(globalDelay);
   allOnAtOnce();
