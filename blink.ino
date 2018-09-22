@@ -9,10 +9,10 @@ void setup() {
   pinMode(10, OUTPUT);
   pinMode(5, OUTPUT);
   pinMode(11, OUTPUT);
-  globalDelay = random (maxRandomValue);
 }
 
 void loop() {
+	globalDelay = random (maxRandomValue);
   oneByOne();
   delay(globalDelay);
   allOnAtOnce();
